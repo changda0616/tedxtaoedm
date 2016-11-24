@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./style.css">
+    <title>New Position | For SEMI</title>
+</head>
+
+<body>
+    <div class="cover-div">
+        <div class="center-div">
+            <img class="logo" src="./logo.png" alt="TEDxTaoyuan">
+            <h1>Special program for SEMI's membrs</h1>
+            <h3>18分鐘好點子，精英匯聚的 TEDx 體驗</h3>
+            
+            <p class="first-child">匯聚來自敘利亞、香港、加拿大、美國與臺灣的好點子。</p>
+            <p>特別邀請來自馬來西亞、南韓、中國的TEDx夥伴參與。</p>
+            <p>從科學、能源、社會、教育到國際政治，</p>
+            <p>透過各個與眾不同的分享、交流，我們將發現存在知識以外的更多可能性。</p>
+            <p><a class="link" href="http://www.accupass.com/go/tedxtaoyuan2016" target="_blank">大會介紹</a>  |  <a class="link" href="http://www.tedxtaoyuan.com/events" target="_blank">活動官網</a></p>
+            <h4 class="semi">SEMI 會員企業特別折扣：凡同一單位同仁</h4>
+            <h4 class="code">如從官網進入，請輸入企業購票 Voucher code: tedxtaoevent</h4>
+            <img class="buy" src="./buy.png" alt="購買方式">
+            <div class="btn-cover"><a href="https://docs.google.com/forms/d/e/1FAIpQLScl7Mv-y1iCjEc54mR91KpGiYyhQ7NPu_esZnRO_206t6iEeg/viewform?c=0&w=1" target="_blank"><button>GET TICKETS</button></a></div>
+            <div class="psi-cover"> 
+                <div>
+                    <h4>Where</h4>
+                    <p>桃園市展演中心</p>
+                    <p>台灣330 桃園市桃園區中正路1188號</p>
+                </div>
+                <div>
+                    <h4>When</h4> 
+                    <p>Sunday, December 25, 2016</p>
+                    <p>1:30 PM — 8:00 PM CST </p>
+                </div>
+
+            </div>
+            <div id="map"></div>
+            <div class="touch"><a href="mailto:tedxtaoyuan@gmail.com">Get In Touch</a></div>
+        </div>
+    </div>
+ <script>
+      function initMap() {
+        var taoyuanArt = {lat: 25.017824, lng: 121.298712};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+            scrollwheel: false,
+          center: taoyuanArt
+        });
+        var marker = new google.maps.Marker({
+          position: taoyuanArt,
+          map: map
+        });
+      }
+    </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChFERJy5234CN_x7qhpVnQ84pvVUGPeqs&callback=initMap"
+async defer></script>
+</body>
+
+</html>
+
+
